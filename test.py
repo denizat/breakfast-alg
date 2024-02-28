@@ -22,7 +22,7 @@ def touch(a,b):
 a = [
         # ["a", "b", "c", "d"],
         ["a", "b", "c"],
-        ["a", "b", "c"],
+        ["a", "b"],
         # ["hazelnut", "walnut", "pistacio", "almond"],
         # ["hazelnut", "walnut"],
         # ["honey", "pekmez"],
