@@ -5,7 +5,6 @@ import (
 	"testing"
 )
 
-
 func Mul(l []int) int {
 	out := 1
 	for _, v := range l {

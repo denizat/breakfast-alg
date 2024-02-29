@@ -39,11 +39,10 @@ func RightSimpleAlg(lvls []int) [][]int {
 		for i := range prev {
 			prev[i] = (prev[i] + 1) % lvls[i]
 		}
-	restart:
-		for _, v := range out {
-			if slices.Equal(prev, v) {
+		for i := 0; i < len(out); i++ {
+			if slices.Equal(prev, out[i]) {
 				prev = it.Path(it.Index(prev) + 1)
-				goto restart
+				i = 0
 			}
 		}
 	}

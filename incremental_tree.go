@@ -7,10 +7,9 @@ type IncrementalTree struct {
 	max         int
 }
 
-func (t IncrementalTree)Max() int {
+func (t IncrementalTree) Max() int {
 	return t.max
 }
-
 
 func NewIncrementalTree(levels []int) IncrementalTree {
 	ourlevels := make([]int, len(levels))
@@ -55,7 +54,7 @@ func (it IncrementalTree) Index(path []int) int {
 }
 
 func (it IncrementalTree) Increment(path []int) {
-	for i := len(path)-1; i >= 0; i-- {
+	for i := len(path) - 1; i >= 0; i-- {
 		path[i]++
 		if path[i] == it.levels[i] {
 			path[i] = 0
